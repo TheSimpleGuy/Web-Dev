@@ -13,9 +13,9 @@ async function WriteToFile(to , content) {
 
 function print(){
     console.log(Header);
+    console.log(test);
 }
-
-console.log(test);
+print();
 
 module.exports = {WriteToFile, test};
 module.exports = Header;
