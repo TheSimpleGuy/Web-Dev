@@ -17,5 +17,4 @@ function print(){
 }
 print();
 
-module.exports = {WriteToFile, test};
-module.exports = Header;
+module.exports.Header
