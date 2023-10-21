@@ -38,7 +38,8 @@ class Header {
     }
 }
 
-export const { Create } = new Header();
-export const { visible, Show, Hide } = new Header();
+/*
+module.exports = Create } = new Header();
+export const { visible, Show, Hide } = new Header();*/
 
 //export const CreateWebsiteHeader = Header.prototype.CreateWebsiteHeader;
