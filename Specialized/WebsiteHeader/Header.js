@@ -1,11 +1,21 @@
+//import { Parse } from '';
+import { WriteToFile } from '../../App.js';
+
 class Header {
+    static #headerCount = 0;
+
     constructor () {
         let websiteHeader = null;
+        Header.#headerCount++;
     }
 
     Create (p_sizeXY = []) {
-        websiteHeader.style.b
-        websiteHeader.style.cssText
+        const _className = ".header" + Header.#headerCount;
+        websiteHeader.className += ".default";
+        websiteHeader.className += _className;
+        //websiteHeader.classList[1].cssText += Parse(_className);
+        WriteToFile("Test", `\n.${_className} {\n\n}\n`);
+        websiteHeader.style = ".default";
         p_sizeXY
         HideWebsiteHeader();
     }
