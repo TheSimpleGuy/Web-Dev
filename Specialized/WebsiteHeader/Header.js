@@ -1,7 +1,7 @@
 //import { Parse } from '';
 import { WriteToFile } from '../../App.js';
 
-class Header {
+export class Header {
     static #headerCount = 0;
 
     constructor () {
