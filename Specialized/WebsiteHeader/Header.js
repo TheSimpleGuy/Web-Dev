@@ -14,9 +14,9 @@ class Header {
         websiteHeader.className += ".default";
         websiteHeader.className += _className;
         //websiteHeader.classList[1].cssText += Parse(_className);
-        WriteToFile("Test", `\n.${_className} {\n\n}\n`);
-        websiteHeader.style = ".default";
-        p_sizeXY
+        //WriteToFile("Test", `\n.${_className} {\n\n}\n`);
+        console.log("RunningHeader");
+        //p_sizeXY
         HideWebsiteHeader();
     }
 
