@@ -18,4 +18,4 @@ function print(){
 console.log(test);
 
 module.exports = {WriteToFile, test};
-module.exports = {Header};
+module.exports = Header;
