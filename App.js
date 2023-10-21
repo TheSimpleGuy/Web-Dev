@@ -1,4 +1,5 @@
 const fs = require('fs/promises');
+const Header = require('./Specialized/WebsiteHeader/Header.js');
 
 const test = 1;
 
@@ -10,6 +11,11 @@ async function WriteToFile(to , content) {
   }
 }
 
+function print(){
+    console.log(Header);
+}
+
 console.log(test);
 
 module.exports = {WriteToFile, test};
+module.exports = {Header};
