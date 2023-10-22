@@ -16,5 +16,6 @@ function print(){
     console.log(test);
 }
 print();
+console.log("\n");
 
 module.exports.Header;
