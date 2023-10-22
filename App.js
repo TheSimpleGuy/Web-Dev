@@ -10,13 +10,17 @@ async function WriteToFile(to , content) {
     console.log(err);
   }
 }
-
+/*
 function print(){
     console.log(Header);
     console.log(test);
-}
-print();
-console.log("\n");
+}*/
 
-module.exports.print;
+//print();
+//console.log("\n");
+
+module.exports = print(){
+    console.log(Header);
+    console.log(test);
+};
 module.exports.Header;
