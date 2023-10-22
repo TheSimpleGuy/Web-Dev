@@ -38,7 +38,7 @@ class Header {
     }
 }
 
-module.exports = {Create, Show, Hide};
+module.exports = Header;
 /*
 module.exports.Header = Header;
 module.exports.Header = Header;*/
