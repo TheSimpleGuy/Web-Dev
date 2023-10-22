@@ -19,7 +19,7 @@ function print(){
 //print();
 //console.log("\n");
 
-module.exports = print(){
+module.exports = function () {
     console.log(Header);
     console.log(test);
 };
