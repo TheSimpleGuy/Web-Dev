@@ -11,8 +11,8 @@ class Header {
 
     Create (p_sizeXY = []) {
         const _className = ".header" + Header.#headerCount;
-        websiteHeader.className += ".default";
-        websiteHeader.className += _className;
+        this.websiteHeader.className += ".default";
+        this.websiteHeader.className += _className;
         //websiteHeader.classList[1].cssText += Parse(_className);
         //WriteToFile("Test", `\n.${_className} {\n\n}\n`);
         console.log("RunningHeader");
@@ -22,7 +22,7 @@ class Header {
 
 
     visible () {
-        return websiteHeader.style.visibility == "Visible";
+        return this.websiteHeader.style.visibility == "Visible";
     }
 
     Show (p_animate) {
@@ -30,11 +30,11 @@ class Header {
             websiteHeader.style.top = websiteHeader.style.bottom;
         }
 
-        websiteHeader.style.visibility = "Visible";
+        this.websiteHeader.style.visibility = "Visible";
     }
 
     Hide () {
-        websiteHeader.style.visibility = "Hidden";
+        this.websiteHeader.style.visibility = "Hidden";
     }
 }
 
