@@ -18,9 +18,10 @@ function print(){
 
 //print();
 //console.log("\n");
-
-module.exports = function print () {
+const print = function () {
     console.log(Header);
     console.log(test);
 };
+
+module.exports = print;
 module.exports.Header;
