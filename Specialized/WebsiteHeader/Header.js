@@ -38,7 +38,10 @@ class Header {
     }
 }
 
+module.exports = {Create, Show, Hide};
+/*
 module.exports.Header = Header;
+module.exports.Header = Header;*/
 /*
 module.exports = Create } = new Header();
 export const { visible, Show, Hide } = new Header();*/
