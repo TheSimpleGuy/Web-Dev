@@ -4,12 +4,8 @@
 class Header {
     static #headerCount = 0;
 
-    constructor () {
-        let websiteHeader = null;
-        Header.#headerCount++;
-    }
-
-    Create (p_sizeXY = []) {
+    constructor (p_sizeXY = []) {
+        let websiteHeader = document.createElement('div');
         const _className = ".header" + Header.#headerCount;
         this.websiteHeader.className += ".default";
         this.websiteHeader.className += _className;
@@ -18,6 +14,8 @@ class Header {
         console.log("RunningHeader");
         //p_sizeXY
         HideWebsiteHeader();
+        
+        Header.#headerCount++;
     }
 
 
