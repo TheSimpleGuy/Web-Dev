@@ -14,13 +14,20 @@ export class Container extends WebContent {
   constructor() {
     console.log("Running Container...");
 
-    super(WebContent.Type.Header);
-    this.websiteHeader = document.createElement("div");
+    super(WebContent.Type.Container);
+    this.container = document.createElement("div");
     const _className = ".header" + Container.#instanceCount;
 
-    this.websiteHeader.classList.add("default");
-    this.websiteHeader.classList.add(_className);
-    super.Hide();
+    let link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "./Objects/Container/Container.css";
+    document.getElementsByTagName("HEAD")[0].appendChild(link);
+
+    this.container.style = document.getElementsByClassName("Container.css");
+    this.container.classList.add("default");
+    this.container.classList.add(_className);
+    //super.Hide();
 
     Container.#instanceCount++;
   }

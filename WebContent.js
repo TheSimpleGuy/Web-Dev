@@ -15,6 +15,7 @@ export class WebContent {
   static Type = {
     Blank: 1,
     Header: 2,
+    Container: 3,
   };
 
   getType() {
